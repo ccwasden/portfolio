@@ -36,7 +36,7 @@ window.addEvent('load', function(){
 
 window.addEvent('scroll', function(){
 	if(!window._paneOpen) {
-		var sY = window.scrollY;
+		var sY = window.pageYOffset || window.scrollY;
 		var max = 299;
 		var min = 90;
 		var height = max-sY;
@@ -323,13 +323,15 @@ var ProjectManager = new Class({
 			this.preventMainScroll();
 		},
 		preventMainScroll: function(){
-			var scrollTop = document.body.scrollTop;
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			document.documentElement.scrollTop = 0;
 			document.body.scrollTop = 0;
 			$('container').addClass('noscroll').scrollTop = scrollTop;
 		},
 		allowMainScroll: function(){
 			var scrollTop = $('container').scrollTop;
 			$('container').removeClass('noscroll').scrollTop = 0;
+			document.documentElement.scrollTop = scrollTop;
 			document.body.scrollTop = scrollTop;
 		},
 		_previousClicked: function(){
