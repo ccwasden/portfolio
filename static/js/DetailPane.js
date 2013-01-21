@@ -23,7 +23,7 @@ var SlidingPane = new Class({
 		open: function(){
 			this.shade.fadeIn();
 			document.body.setStyle('overflow','hidden');
-			var width = document.body.getWidth()*5/8;
+			var width = parseInt(document.body.getWidth()*7/8);
 			if(width > 800) width = 800;
 			if(width < 450) width = document.body.getWidth();
 			this.backdrop.setStyles({
