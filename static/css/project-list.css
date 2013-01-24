@@ -73,6 +73,7 @@ p { padding: 8px; max-width: 550px;}
 }
 
 .infoPane p {  
+    max-width:none;
 }
 
 .infoPane h1 {
