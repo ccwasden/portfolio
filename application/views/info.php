@@ -16,7 +16,7 @@
 	<a href="mailto:ccwasden@gmail.com">Email</a><span class="gray"> ・ </span><a href="javascript:void(0)" onclick="askForResume();">Resumé</a>
 </p>
 </div>
-<p class="small"> <br/><br/>
+<p class="small"> <br/>
 	I designed and coded this site from the ground up<br/>
 	© 2013 Chase Wasden
 </p>
