@@ -1,6 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
-<head>
+<link rel="icon" 
+      type="image/png" 
+      href="http://www.wasden.com/ccw/favicon.png">
+<head profile="http://www.w3.org/2005/10/profile">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
 	<title>ccwasden</title>
