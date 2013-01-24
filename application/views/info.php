@@ -1,5 +1,5 @@
 <img class="infoImg" src="images/me.jpg">
-<h1>An architect</h1>
+<div class="text"><h1>An architect</h1>
 <p>
 	 I see myself as an architect of sorts. I tailor the function of my applications to meld with the 
 	 life of the user. I design experiences that are absolutely simple yet fully practical. 
@@ -13,10 +13,9 @@
 	(though I still can't figure out where all the money goes now). 
 	I thrive on new projects and opportunities, so please contact me with anything grand.
 </p><p> 
-	<a href="mailto:ccwasden@gmail.com">Here is my email.</a>
-</p><p> 
-	<a href="javascript:void(0)" onclick="askForResume();">Here is my resumé.</a>
+	<a href="mailto:ccwasden@gmail.com">Email</a><span class="gray"> ・ </span><a href="javascript:void(0)" onclick="askForResume();">Resumé</a>
 </p>
+</div>
 <p class="small"> <br/><br/>
 	I designed and coded this site from the ground up<br/>
 	© 2013 Chase Wasden

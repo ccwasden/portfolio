@@ -69,12 +69,23 @@ p { padding: 8px; max-width: 550px;}
     box-sizing: border-box;
 }
 
+.gray { 
+}
+
+.infoPane p {  
+}
+
 .infoPane h1 {
     color:#222;
     padding:12px 5px 0;
 }
 
-.infoPane img {width:100%; }
+.infoPane img {
+    float: left;
+     margin-right:12px;
+    width: 200px;
+    margin-bottom:20px
+}
 .infoPane .container { padding:0 10px;}
 p.small { font-size:.8em; }
 

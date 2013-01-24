@@ -27,7 +27,7 @@ body {
 }
 
 a {
-	color: #003399;
+	color: #7F73AF;
 	background-color: transparent;
 	font-weight: normal;
 }
@@ -138,3 +138,11 @@ a:hover{text-decoration: underline;}
     padding: 1px 22px 0 0;
     color: #7F73AF;
 }
+@media only screen and (-webkit-device-pixel-ratio: 2){ 
+    .moreInfoLink {
+        background-size: 20px;
+        background-image: url(img/external@2x.png);
+    }
+}
+
+
