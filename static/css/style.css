@@ -131,3 +131,10 @@ a:hover{text-decoration: underline;}
 	padding: 20px 18px;
 
 }
+
+.moreInfoLink {
+    float:right;
+    background: url(img/external.png) no-repeat top right;    
+    padding: 1px 22px 0 0;
+    color: #7F73AF;
+}
