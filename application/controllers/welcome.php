@@ -36,6 +36,32 @@ class Welcome extends CI_Controller {
 	public function email(){
 		$address = $this->input->post('address');
 		$this->db->insert('email', array('email'=> $address));
+
+		$config = Array(
+		    'protocol' => 'smtp',
+		    'smtp_host' => 'ssl://smtp.googlemail.com',
+		    'smtp_port' => 465,
+		    'smtp_user' => 'xxx',
+		    'smtp_pass' => 'xxx',
+		    'mailtype'  => 'html', 
+		    'charset'   => 'iso-8859-1'
+		);
+		$this->load->library('email', $config);
+		$this->email->set_newline("\r\n");
+
+
+		$this->email->from('wazztone@gmail.com', 'Chase Wasden');
+		$this->email->to('ccwasden@gmail.com'); 
+		// $this->email->cc('another@another-example.com'); 
+		// $this->email->bcc('them@their-example.com'); 
+
+		$this->email->subject('Resume Request');
+		$this->email->message('This email has requested your resume: '.$address);	
+
+		$this->email->send();
+
+		echo $this->email->print_debugger();
+
 	}
 }
 
